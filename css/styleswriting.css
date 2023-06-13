@@ -1,0 +1,265 @@
+/* Updated styles */
+
+:root {
+    --color-primary-light: #000000;
+  --color-secondary-light: #eeeded;
+  --color-gray-light: #BDBDBD;
+  --color-blue-light: #110eec;
+
+  --color-primary-dark: #ffffff;
+  --color-secondary-dark: #333333;
+  --color-gray-dark: #828282;
+  --color-blue-dark: #acacff;
+
+  --color-primary: var(--color-primary-light);
+  --color-secondary: var(--color-secondary-light);
+  --color-gray: var(--color-gray-light);
+  --color-blue: var(--color-blue-light);
+    --font-primary: "futura-pt", sans-serif;
+    --font-secondary: "grad", serif;
+    --spacing-small: 10px;
+    --spacing-medium: 15%;
+    --spacing-large: 60px;
+    --transition-default: all 0.3s ease-in-out;
+    --max-width: 1140px;
+    --border-radius: 5px;
+}
+.select {
+    color: var(--color-primary);
+}
+body {
+    background-color: var(--color-secondary);
+  color: var(--color-primary);
+
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.wrapper {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    margin-left: var(--spacing-medium);
+    margin-right: var(--spacing-medium);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* change this line */
+
+
+}
+
+.card {
+    width: 100%; /* add this line */
+    background: var(--color-secondary);
+    border-bottom: 1px solid var(--color-gray);
+}
+
+
+
+h1, h2, h5, h4{
+    color: var(--color-primary);
+    font-family: var(--font-secondary);
+}
+
+h1 {
+  font: var(--font-secondary);
+  font-weight: 800;
+    font-size: 2.5rem;
+    width: 50%;
+    
+}
+h4{
+  font: var(--font-primary);
+  font-weight: 800;
+    font-size: 16px;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 1em;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 2em;
+    line-height: 8px;
+    font-size: 24;
+}
+h3{
+    font: var(--font-primary);
+    font-weight: 500;
+    line-height: 24px;
+}
+h3 a{
+    line-height: 0;
+    color: var(--color-blue);
+    
+}
+h3 a:hover{
+    text-decoration: underline;
+    color: var(--color-blue);
+}
+
+p {
+  font: var(--font-primary);
+
+    margin-bottom: var(--spacing-medium);
+}
+
+a {
+    color: var(--color-gray);
+    text-decoration: none;
+    transition: var(--transition-default);
+}
+
+a:hover, a:focus {
+    color: var(--color-primary);
+    outline: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-gray);
+    line-height: 2.3;
+    font-size: 24px;
+    padding: 0 var(--spacing-medium);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  nav.navbar {
+    display: flex;
+  }
+  
+  nav.navbar .nav-item {
+    margin-right: 25px;
+  }
+  
+  nav.navbar .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+
+/* Dark mode styles */
+
+.mode-switch {
+border: 1px solid var(--color-gray);
+
+ 
+  background:var(--color-secondary);
+    line-height: 1.3; /* Adjusts the vertical space around the text */
+
+  color: var(--color-secondary);
+  padding:0px 3px; /* Vertical padding is 10px, horizontal padding is 20px */
+  transition: var(--transition-default); /* Smooth transition */
+  border-radius: 3px; /* Creates a rounded square border */
+
+
+}
+
+.mode-switch:hover {
+    border:var(--color-primary-light);
+    background: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.filter-type {
+    display: flex;
+    
+  }
+  
+  .filter-button {
+    font-size: 12px;
+    background-color: var(--color-secondary);
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 10px;
+    transition: var(--transition-default);
+  }
+  
+  .filter-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+  
+  .filter-button.active {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+  .article__tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+time{
+    font-size: 16px;
+}
+.tags__item {
+    display:none;
+    background-color: var(--color-gray);
+    padding: 1px 5px;
+    border-radius: 10px;
+    font-size: px;
+    margin-right: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+    transition: var(--transition-default);
+}
+.tweet-container{
+ scale: 1;
+ margin-top: -40px;
+
+  /* Adjust this value to make the tweet smaller or larger */
+}
+.twitter-tweet {
+  width: 50%;
+  height: 50%;
+  border: none;
+
+  padding-left: var(--spacing-small);
+  margin: var(--spacing-medium) 0;
+  color: var(--color-primary);
+}
+
+.twitter-tweet a {
+  color: var(--color-blue);
+}
+
+.twitter-tweet a:hover {
+  color: var(--color-blue-dark);
+  text-decoration: underline;
+}
+/* CSS to format images on the blog */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+/* CSS to add some margin to top and bottom of images */
+img {
+  margin-top: 16px;
+}
+
+/* CSS to format captions */
+.image-caption {
+  text-align: center;
+  font-size: 0.8em;
+  color: #666;
+}

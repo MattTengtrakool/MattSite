@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Blog</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/vdl4wnb.css">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+  <link rel="stylesheet" href="/css/styleswriting.css">
+</head>
+<body>
+    
+    <header>
+        <!--<h1>Matt Tengtrakool</h1>-->
+        <div class="nav-container">
+          <nav class="navbar">
+            <a href="/index.html" class="nav-item">Home</a>
+            <!-- <a href="projects.html" class="nav-item">Projects</a> -->
+            <a href="#" class="nav-item select">Articles</a>
+            <a href="mailto:matt_tengtrakool@college.harvard.edu" class="nav-item">Contact</a>
+          </nav>
+          <div class="mode-switch">🌙</div>
+        </div>
+      </header>
+      
+  
+  <main>
+    <div class="wrapper">
+      <h4>Mainly short stories and poetry.  I write for the Harvard Technology Review and the Harvard Political Review. Below are some of my favorites.</h4>
+      <div id="filterType" class="filter-type">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="article">Article</button>
+        <button class="filter-button" data-filter="article">Essay</button>
+        <button class="filter-button" data-filter="poetry">Poetry</button>
+        <button class="filter-button" data-filter="programming">Programming</button>
+        <button class="filter-button" data-filter="research">Research</button>
+        <!-- Add other types if needed -->
+      </div>
+      
+      <section>
+        <h2 id="year2023">
+          2023
+        </h2>
+        <div class="container">
+          <!-- Repeating block -->
+          <div class="card" data-type="essay">
+            <h3>
+              Turning Dreams into Businesses
+              <a href="./blogpages/dreams.html" target="_blank">
+                [here]
+              </a>
+            </h3>
+            <time datetime="2023-06-14">2023-06-14</time>
+            
+          </div>
+          <div class="card" data-type="article essay">
+            <h3>
+              The Howey Test and Securities: Square Pegs and Round Holes
+              <a href="./blogpages/squarepegs.html" target="_blank">
+                [here]
+              </a>
+            </h3>
+            <time datetime="2023-06-13">2023-06-13</time>
+            
+          </div>
+          <div class="card" data-type="programming">
+            <h3>
+                How to build tool-using agents with LangChain
+              <a href="https://medium.com/artificial-corner/how-to-build-tool-using-agents-with-langchain-d9fa9674b6c7" target="_blank">
+                [Artificial Corner]
+              </a>
+            </h3>
+            <time datetime="2023-06-05">2023-06-05</time>
+            
+          </div>
+          <div class="card" data-type="programming">
+            <h3>
+                “Knowledge Bound” your LLM without fine-tuning
+              <a href="https://medium.com/gitconnected/knowledge-bound-your-llm-without-fine-tuning-731355e88994" target="_blank">
+                [Level Up Coding]
+              </a>
+            </h3>
+            <time datetime="2023-05-31">2023-05-31</time>
+            
+          </div>
+          <div class="card" data-type="poetry">
+            <h3>
+              Summer Break
+              <a href="/pages/blogpages/poetry/summerbreak.html" target="_blank">
+                [here]
+              </a>
+            </h3>
+            <time datetime="2023-05-29">2023-05-29</time>
+            
+          </div>
+
+          <div class="card" data-type="article programming">
+            <h3>
+                Understanding What We Lose
+              <a href="https://medium.com/towards-data-science/understanding-what-we-lose-b91e114e281b" target="_blank">
+                [Towards Data Science] 
+              </a>
+            
+                <span class="tags__item">Medium Editors Pick</span>
+                <span class="tags__item">TDS Editors Pick</span>
+            </h3>
+            
+            <time datetime="2023-05-24">2023-05-24</time>
+            
+          </div>
+          <div class="card" data-type="article">
+            <h3>
+                Homo Informaticus: The Evolving Relationship of Information and the Human Species
+              <a href="https://harvardtechnologyreview.com/2023/05/21/homo-informaticus-the-evolving-relationship-of-information-and-the-human-species/" target="_blank">
+                [Harvard Tech Review]
+              </a>
+            </h3>
+            <time datetime="2023-05-04">2023-05-04</time>
+            
+          </div>
+          <div class="container">
+            <div class="card" data-type="research">
+              <h3>
+                ChatGPT as a Teaching Assistant: Evaluating Capabilities and
+Boundary Maintenance in the Classroom
+                <a href="static/ChatGPTasaTeachingAssistant:EvaluatingCapabilitiesandBoundaryMaintenanceintheClassroom.pdf" >
+                    [pdf]
+                </a>
+              </h3>
+              <time datetime="2023-04-18">2023-05-02</time>
+              
+            </div>
+            
+          </div>
+          <div class="card" data-type="article">
+            <h3>
+                Lessons from the Facebook Files: PR Fire and Political Repression
+              <a href="https://harvardtechnologyreview.com/2023/02/08/lessons-from-the-facebook-files-pr-fire-and-political-repression/" target="_blank">
+                [Harvard Tech Review]
+              </a>
+            </h3>
+            <time datetime="2023-02-09">2023-02-09</time>
+            
+          </div>
+          <div class="card" data-type="article">
+            <h3>
+                RMRK and The Future of Utility NFTs
+              <a href="https://harvardtechnologyreview.com/2023/02/08/rmrk-and-the-future-of-utility-nfts/" target="_blank">
+                [Harvard Tech Review]
+              </a>
+            </h3>
+            <time datetime="2023-01-06">2023-01-06</time>
+            
+          </div>
+          
+          
+          </div>
+          <h2 id="year2022">
+            2022
+          </h2>
+          <div class="container">
+            <div class="card" data-type="article programming">
+              <h3>
+                Swip3 Litepaper
+                <a href="https://medium.com/@swip3/swip3-litepaper-2e9513da84d8"  target="_blank">
+                  [Medium]
+                </a>
+              </h3>
+              <time datetime="2022-04-03">2022-04-03</time>
+              
+            </div>
+            
+          </div>
+
+          <div class="container">
+          <div class="card" data-type="article">
+            <h3>
+                An Interview with Anthony Scaramucci
+              <a href="https://harvardpolitics.com/an-interview-with-anthony-scaramucci/"  target="_blank">
+                [Harvard Political Review]
+              </a>
+            </h3>
+            <time datetime="2022-03-28">2022-03-28</time>
+            
+          </div>
+          
+        </div>
+        <div class="container">
+            <div class="card" data-type="programming">
+              <h3>
+                AntarcticDAO Litepaper
+                <a href="#">
+                    [pdf]
+                </a>
+              </h3>
+              <time datetime="2022-04-03">2022-04-03</time>
+              
+            </div>
+            
+          </div>
+          <div class="container">
+            <div class="card" data-type="research">
+              <h3>
+                Linear Algebra for Library Shelf Sorting
+                <a href="static/LinearAlgebraforLIbraryShelfSorting.pdf" download>
+                    [pdf]
+                </a>
+              </h3>
+              <time datetime="2022-02-02">2022-02-02</time>
+              
+            </div>
+            
+          </div>
+
+        <h2 id="year2021">
+            2021
+          </h2>
+
+          <div class="container">
+          <div class="card" data-type="article essay">
+            <h3>
+                The Virtual Renaissance
+              <a href="#"  target="_blank">
+                [Harvard Tech Review]
+              </a>
+            </h3>
+            <time datetime="2021-11-06">2021-11-06</time>
+            
+          </div>
+          <div class="card" data-type="article essay">
+            <h3>
+                Why Thailand's Young People Are Angry
+              <a href="https://harvardpolitics.com/thai-young-people/"  target="_blank">
+                [Harvard Political Review]
+              </a>
+            </h3>
+            <time datetime="2021-10-20">2021-10-20</time>
+            
+          </div>
+          <div class="card" data-type="article">
+            <h3>
+                Owning the Metaverse: Blockchain Democracy in a Virtual World
+              <a href="https://harvardtechnologyreview.com/2021/08/22/owning-the-metaverse-blockchain-democracy-in-a-virtual-world/" target="_blank">
+                [Harvard Tech Review]
+              </a>
+            </h3>
+            <time datetime="2021-08-22">2021-08-22</time>
+            
+          </div>
+          <div class="card" data-type="poetry">
+            <h3>
+              A king in a picture
+              <a href="/pages/blogpages/poetry/kinginapicture.html" target="_blank">
+                [here]
+              </a>
+            </h3>
+            <time datetime="2021-03-22">2021-03-22</time>
+            
+          </div>
+        </div>
+
+          <h2 id="year2020">
+            2020
+          </h2>
+
+          <div class="container">
+            <div class="card" data-type="article essay">
+                <h3>
+                    The apple falls far from the tree.
+                  <a href="https://www.walden.org/education/essay-contest/matthew-tengtrakool/" target="_blank">
+                    [Walden.org]
+                  </a>
+                  <span class="tags__item">Grand Prize Winner</span>
+                </h3>
+                <time datetime="2020-04-02">2020-04-02</time>
+                
+              </div>
+          <div class="card" data-type="article essay">
+            <h3>
+                Democracy’s Glasses
+              <a href="https://medium.com/@matt.tengtrakool/the-duty-of-the-educated-dd4f628808da" target="_blank">
+                [Medium]
+              </a>
+            </h3>
+            <time datetime="2020-03-04">2020-03-04</time>
+            
+          </div>
+          <div class="card" data-type="essay">
+            <h3>
+                Progress From Dire Straits
+              <a href="#">
+                [New York Times]
+              </a>
+              <span class="tags__item">Student Finalist</span>
+            </h3>
+            <time datetime="2020-03-01">2020-03-01</time>
+            
+          </div>
+          <div class="card" data-type="poetry">
+            <h3>
+                The forward vehicle of time
+              <a href="https://omeka.library.tufts.edu/files/original/85b25fc61ef5a01d9a6a23f7032b95cd.pdf" target="_blank">
+                [Tufts Omeka]
+              </a>
+              <span class="tags__item">Gold Key</span>
+            </h3>
+            <time datetime="2020-02-19">2020-02-19</time>
+            
+          </div>
+          <div class="card" data-type="essay">
+            <h3>
+                What is Your Nationality?
+              <a href="https://omeka.library.tufts.edu/files/original/d9d2e5cd8ba7f0208ed004e6c16e82ae.pdf" target="_blank">
+                [Tufts Omeka]
+              </a>
+              <span class="tags__item">Gold Key</span>
+            </h3>
+            <time datetime="2020-02-19">2020-02-19</time>
+            
+          </div>
+          <div class="card" data-type="essay">
+            <h3>
+                On Chung•Hyo•Ye
+              <a href="#" >
+                [KSCPP]
+              </a>
+              <span class="tags__item">National Prize</span>
+            </h3>
+            <time datetime="2020-01-29">2020-01-29</time>
+            
+          </div>
+          <div class="card" data-type="essay">
+            <h3>
+                Andante con moto
+              <a href="./blogpages/andanteconmoto.html" target="_blank">
+                [here]
+              </a>
+            </h3>
+            <time datetime="2020-01-11">2020-01-11</time>
+            
+          </div>
+          
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="wrapper">
+      <p>
+        <a href="https://twitter.com/MattTtkool" target="_blank">twitter</a> // 
+        <a href="https://github.com/MattTengtrakool" target="_blank">github</a> // 
+        <a href="https://www.linkedin.com/in/matt-tengtrakool/" target="_blank">linkedin</a> // 
+        <a href="https://medium.com/@matt.tengtrakool" target="_blank">medium</a>
+      </p>
+      <p> © 2023 Matt Tengtrakool </p>
+    </div>
+  </footer>
+  <script>
+    $(document).ready(function() {
+      $('.mode-switch').on('click', function() {
+        if ($('body').hasClass('dark-mode')) {
+          $('body').removeClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-light)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-light)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-light)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-light)');
+        } else {
+          $('body').addClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-dark)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-dark)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-dark)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-dark)');
+        }
+      });
+    });
+    </script>
+    <script>
+        $(document).ready(function() {
+  $('#filterType .filter-button').on('click', function() {
+    // Remove the active class from all buttons
+    $('.filter-button').removeClass('active');
+    
+    // Add the active class to the clicked button
+    $(this).addClass('active');
+    
+    var selectedType = $(this).attr('data-filter');
+    
+    if (selectedType == 'all') {
+      // Show all cards if "All" is selected
+      $('.card').show();
+    } else {
+      // Otherwise, hide all cards
+      $('.card').hide();
+      
+      // Then show only the cards with the selected type
+      // The '.' in front of selectedType treats it as a class
+      $('.card[data-type~="' + selectedType + '"]').show();
+    }
+    function updateYearHeaders() {
+      $('h2').each(function() {
+        var $header = $(this);
+        var $next = $header.next();
+        var visibleCards = $next.find('.card:visible').length;
+        if (visibleCards > 0) {
+          $header.show();
+        } else {
+          $header.hide();
+        }
+      });
+    }
+
+    $('.filter-button').click(function() {
+      var filter = $(this).data('filter');
+
+      if (filter == 'all') {
+        $('.card').show();
+      } else {
+        $('.card').hide();
+        $('.card[data-type*="' + filter + '"]').show();
+      }
+
+      updateYearHeaders();
+    });
+
+  });
+
+});
+        </script>
+        
+  
+    <script>
+        $(document).ready(function() {
+          $('time').each(function() {
+            var date = new Date($(this).attr('datetime'));
+            var options = { year: 'numeric', month: 'long', day: 'numeric' };
+            $(this).text(date.toLocaleDateString('en-US', options));
+          });
+        });
+      </script>
+    
+  <script src="/js/writing.js"></script>
+</body>
+</html>

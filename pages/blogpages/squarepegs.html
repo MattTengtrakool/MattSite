@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Blog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vdl4wnb.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="/css/styleswriting.css">
+  </head>
+
+<body>
+  <header>
+    <!--<h1>Matt Tengtrakool</h1>-->
+    <div class="nav-container">
+      <nav class="navbar">
+        <a href="/index.html" class="nav-item">Home</a>
+        <!-- <a href="projects.html" class="nav-item">Projects</a> -->
+        <a href="/pages/writing.html" class="nav-item select">Articles</a>
+        <a href="mailto:matt_tengtrakool@college.harvard.edu" class="nav-item">Contact</a>
+      </nav>
+      <div class="mode-switch">🌙</div>
+    </div>
+  </header>
+      <div class="wrapper">
+        
+        <h5>
+          The Howey Test and Crypto: Square Pegs and Round Holes
+        </h5>
+        <time datetime="2023-06-12">2023-06-12</time>
+
+        <p>
+          Regulation in the world of technology is often akin to trying to fit a square peg into a round hole. It's particularly challenging when the square peg is the novel and evolving world of cryptocurrency and the round hole is a 1946 Supreme Court case known as the "Howey Test". 
+<br>
+<br>
+Regulation and technology are like a cat and a laser pointer. Today’s cat is Gary Gensler. 
+<br>
+<br>
+Under Genseler’s leadership, we have seen the SEC develop an aggressive stance toward the regulation and securitization of cryptocurrencies. Numerous crypto companies have faced investigations and litigations, leading to punitive market volatility and exchanges resorting to heavy cope. 
+
+<div class="tweet-container">
+  <blockquote class="twitter-tweet">
+    <p lang="en" dir="ltr">
+      They didn&#39;t sue FTX. 
+      <a href="https://t.co/FVgi5l6VcI">https://t.co/FVgi5l6VcI</a>
+    </p>
+    &mdash; CZ 🔶 Binance (@cz_binance) 
+    <a href="https://twitter.com/cz_binance/status/1666162656351342594?ref_src=twsrc%5Etfw">June 6, 2023</a>
+  </blockquote>
+</div>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+The fundamental issue lies not just in the enforcement of the law but in the law itself - more specifically, the ambiguity surrounding the definition of 'securities' as applied to cryptocurrencies.
+<br>
+<br>
+The SEC largely relies on the "Howey Test" to determine whether a transaction constitutes an "investment contract" and therefore a security. This test, derived from a Supreme Court case from 1946, requires three conditions to be met: an investment of money, in a common enterprise, with an expectation of profits predominantly from the efforts of others. The ambiguity arises when applying this nearly 80-year-old test to cryptocurrencies.
+<br>
+<br>
+Cryptocurrencies are not traditional investments; they are a new type of asset class with unique properties. For instance, many tokens provide utility within their respective ecosystems, functioning more like digital goods or commodities than securities. They can be used to access certain services, participate in governance, or even as a medium of exchange. Applying the Howey Test to such tokens can be inappropriate and lead to false positives, stifering innovation and hindering the growth of the industry.
+<br>
+<br>
+Additionally, the expectation of profits "from the efforts of others" is a complicated aspect in the realm of decentralized networks. Cryptocurrencies often have communities of developers, miners, and users, all contributing to the value and success of the network. When everyone contributes, who exactly are the 'others' whose efforts are supposed to drive profit expectations?
+<br>
+<br>
+But the law is also subject to the complications of Gensler’s leadership. The SEC's actions under Gensler seem, to an outsider, more like a crackdown than regulation. Classification of a token can vary from one jurisdiction to another. Often, companies are left in the dark until the SEC's hammer falls, and by then, it's too late. The startup world thrives on clear rules and boundaries; the current situation is akin to playing a game where the rules are made up on the fly. Who cares about square pegs and holes when the whole puzzle keeps changing shape.
+<br>
+<br>
+The call for regulatory oversight is undeniable. We must hold accountable the integrity of any financial ecosystem for the betterment of investors and the general public. However, these regulatory measures should not be rigid edicts, blindly indifferent to the unique contours of their subjects. The crypto industry demands a bespoke, evolving, and equitable regulatory architecture; one that goes beyond merely reshaping the antiquated concept of 'securities.' It calls for open dialogue between founders and policymakers, fostering a fertile ground for community-driven, pragmatic solutions. 
+<br>
+<br>
+The current wave of stringent measures against crypto companies, therefore, should not be hastily dismissed as a manifestation of regulatory overreach. It is a symptom of a far more profound ailment: our existing regulatory frameworks are like circles of rigidity, laboring to encapsulate the square-like ingenuity of technological progress. Until we undertake the necessary task of reshaping our regulatory mindset, we remain locked in a relentless struggle against the tide of innovation. The more we fail to have hard conversations, the more likely we are to break things.
+
+        </p>
+
+      </div>
+      <footer>
+        <div class="wrapper">
+          <p>
+            <a href="https://twitter.com/MattTtkool" target="_blank">twitter</a> // 
+            <a href="https://github.com/MattTengtrakool" target="_blank">github</a> // 
+            <a href="https://www.linkedin.com/in/matt-tengtrakool/" target="_blank">linkedin</a> // 
+            <a href="https://medium.com/@matt.tengtrakool" target="_blank">medium</a>
+          </p>
+          <p> © 2023 Matt Tengtrakool </p>
+        </div>
+      </footer>
+<script>
+    $(document).ready(function() {
+      $('.mode-switch').on('click', function() {
+        if ($('body').hasClass('dark-mode')) {
+          $('body').removeClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-light)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-light)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-light)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-light)');
+        } else {
+          $('body').addClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-dark)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-dark)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-dark)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-dark)');
+        }
+      });
+    });
+    </script>
+</body>
+</html>

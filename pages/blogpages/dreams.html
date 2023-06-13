@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Blog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vdl4wnb.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="/css/styleswriting.css">
+  </head>
+
+<body>
+  <header>
+    <!--<h1>Matt Tengtrakool</h1>-->
+    <div class="nav-container">
+      <nav class="navbar">
+        <a href="/index.html" class="nav-item">Home</a>
+        <!-- <a href="projects.html" class="nav-item">Projects</a> -->
+        <a href="/pages/writing.html" class="nav-item select">Articles</a>
+        <a href="mailto:matt_tengtrakool@college.harvard.edu" class="nav-item">Contact</a>
+      </nav>
+      <div class="mode-switch">🌙</div>
+    </div>
+  </header>
+  
+      <div class="wrapper">
+           <h5>
+            Turning Dreams into Businesses
+        </h5>
+        <time datetime="2023-06-14">2023-06-14</time>
+        <p>
+          <i>This was written almost 4 months ago, as Hilea and I reflected on our journey in building something useful in the world. We’ve learned and grown, and I wanted to share our reflections for others and our future selves.“
+          </i>
+          <img src="/static/486C0CFD-9995-4690-9E48-D136F5F941F9.JPG">
+         
+          One year ago today, my cofounder Hilea and I raised our first round of funding. We packed our bags, moved out to SF and propped ourselves up in a top-floor suite of our new condo, getting ready to build the next big thing.
+          <br>
+          <br>
+          In the early days, we found ourselves entrenched in ideas, prototypes, and covered whiteboards. There was an intoxicating allure to the promises of the future - constantly selling others and ourselves on our grand vision. It was easy to get lost in that dream. 
+          <br>
+          <br>
+          We, nevertheless, were able to sell our dream well. And by May, we had turned our idea into a company worth unfathomably more than either of us, nor our families had ever seen. We hired staff, set up an office, and built out our advisory board. To us, at only 18, we thought this had validated our perceived naivety.
+          <br>
+          <br>
+          Venture capitalists can buy into dreams, that's their job. But users and companies are not afforded that luxury; they buy solutions they need today. Our job was to provide them with useful tools now. What we soon learned was that most dreams don’t deserve to be businesses, even the “greatest” ones. Ours, at that time, certainly did not. 
+          <br>
+          <br>
+          It's easy to fall in love with your vision of the future when you're at the helm. To dream is human, and to dream big is a common, necessary trait among successful founders. Yet, those dreams need to take root in the present. After all, you can't build a user base in the future. You can't generate revenue in the future. And you certainly can't survive as a startup on the promise of future success alone.
+          <br>
+          <br>
+          One of the realities I've come to appreciate is that $5 today is often better than the promise of $50 tomorrow. It's a validation, a signal that what you're offering has value now solving a real problem today. In contrast, $50 tomorrow is often just a hypothesis, a bet on the future. You can’t buy Blue Bottle with a rain check. 
+          <img src="/static/8E41091B-6FF8-4451-A35A-70C4CF038922.JPG">
+          
+          Startups don't exist in a vacuum. They're inextricably woven into the fabric of our rapidly evolving society. The world changes at an astonishing pace. Technologies evolve, markets shift, societal values transform, all at a velocity that was inconceivable to the past. Yes, some human needs and desires are evergreen, but their specific manifestations are highly susceptible to volatility. A fantastic idea that's ahead of its time is, in many ways, just as ineffective as one that's behind. If you can't produce a paying customer or contract, its better to rethink your idea.
+          <br>
+          <br>
+          Now, permutations removed from our starting point. It’s been important for us to be agile and shift our mindset to the business we are making from day to day. Our product has not just evolved with the entity of ‘now’, we have been demanded to. Today’s brilliant innovation is tomorrow’s relic, and the same goes for people's wants and needs. Our dreams are nothing without an audience, without being useful today to our customers. And so, our mantra has become clear. It's not just about building something people want; it's about building something people want now. 
+          <br>
+          <br>        </p>
+
+      </div>
+      
+      
+      <footer>
+        <div class="wrapper">
+          <p>
+            <a href="https://twitter.com/MattTtkool" target="_blank">twitter</a> // 
+            <a href="https://github.com/MattTengtrakool" target="_blank">github</a> // 
+            <a href="https://www.linkedin.com/in/matt-tengtrakool/" target="_blank">linkedin</a> // 
+            <a href="https://medium.com/@matt.tengtrakool" target="_blank">medium</a>
+          </p>
+          <p> © 2023 Matt Tengtrakool </p>
+        </div>
+      </footer>
+<script>
+    $(document).ready(function() {
+      $('.mode-switch').on('click', function() {
+        if ($('body').hasClass('dark-mode')) {
+          $('body').removeClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-light)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-light)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-light)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-light)');
+        } else {
+          $('body').addClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-dark)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-dark)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-dark)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-dark)');
+        }
+      });
+    });
+    </script>
+</body>
+</html>

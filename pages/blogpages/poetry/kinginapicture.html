@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Blog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vdl4wnb.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="/css/styleswriting.css">
+  </head>
+
+<body>
+  <header>
+    <!--<h1>Matt Tengtrakool</h1>-->
+    <div class="nav-container">
+      <nav class="navbar">
+        <a href="/index.html" class="nav-item">Home</a>
+        <!-- <a href="projects.html" class="nav-item">Projects</a> -->
+        <a href="/pages/writing.html" class="nav-item select">Articles</a>
+        <a href="mailto:matt_tengtrakool@college.harvard.edu" class="nav-item">Contact</a>
+      </nav>
+      <div class="mode-switch">🌙</div>
+    </div>
+  </header>
+      <div class="wrapper">
+        
+        <h5>
+          A king in a picture
+        </h5>
+        <time datetime="2021-03-22">2021-03-22</time>
+
+        <p>
+          She said       if you cup your hands just right and look through them, 
+          you can frame a castle. Take the spot where the sun hits brightest,
+          <br>
+          <br>
+          away from the sliding moss and dirt driven moat. Besiege the 
+          noble height, feeling walls as if it was home. It was the facade
+          <br>
+          <br>
+          of peasants' plenty, where I modeled for you. The muse to 
+          the incoherent shutter of frames that would cease in frustration.
+          <br>
+          <br>
+          She wished the dandelions from Versailles and persistence from
+          Angkor. Still,           my eyelids grew warm and red, smiling 
+          <br>
+          <br>
+          innocently with hushed pride. She was a dreamer,         born
+          looking up at stone walls, the body for a throne 
+          <br>
+          <br>
+          she took rightly with possession. A fruitful balance of 
+          melancholy and mockery that warranted a crown.
+          <br>
+          <br>
+          We entered through the front doors. The drawbridge down so 
+          long the chains were gone. The foyer empty of all but
+          <br>
+          <br>
+          rude graffiti and dust that marked our steps through the
+          citadel, tracing interruptions.     She took a picture.
+          <br>
+          <br>
+          With the wind, the floorboards sung of peasant dreams,
+          the fateful glare of old phantoms sustained by 
+          <br>
+          <br>
+          filtered sunlight. Pitiful candlelight flickering on and off, 
+          unable to withstand the weight of this responsibility. Together,
+          <br>
+          <br>
+          we waltzed where a queen once walked, with grace we
+          became one to the smell of Moth-eaten cotton, 
+          <br>
+          <br>
+          We ended in the grand room, found a piano with no keys. Tattered curtains 
+          peeling softly to lame greys. Pieces of fine china
+          <br>
+          <br>
+          and carved glass scattered like a mosaic  <br>
+          a king in the picture on the wall.
+        </p>
+
+      </div>
+      <footer>
+        <div class="wrapper">
+          <p>
+            <a href="https://twitter.com/MattTtkool" target="_blank">twitter</a> // 
+            <a href="https://github.com/MattTengtrakool" target="_blank">github</a> // 
+            <a href="https://www.linkedin.com/in/matt-tengtrakool/" target="_blank">linkedin</a> // 
+            <a href="https://medium.com/@matt.tengtrakool" target="_blank">medium</a>
+          </p>
+          <p> © 2023 Matt Tengtrakool </p>
+        </div>
+      </footer>
+<script>
+    $(document).ready(function() {
+      $('.mode-switch').on('click', function() {
+        if ($('body').hasClass('dark-mode')) {
+          $('body').removeClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-light)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-light)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-light)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-light)');
+        } else {
+          $('body').addClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-dark)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-dark)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-dark)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-dark)');
+        }
+      });
+    });
+    </script>
+</body>
+</html>
