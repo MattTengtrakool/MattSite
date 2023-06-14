@@ -263,12 +263,12 @@ img {
   font-size: 0.8em;
   color: #666;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   body {
     font-size: 20px; /* Increase base font size for better mobile readability */
   }
   header{
-    font-size: 1.5em;
+    font-size: 2.5em;
   }
   #main .part .section img, #main .part .section video {
     width: 100%;
@@ -315,11 +315,24 @@ img {
     height: 50px;
   }
 
-  h4, h6 {
-    font-size: 1em; /* Increase font size for better readability */
+  
+ .filter-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Increase font size for better readability */
+  }
+  h3{
+    font-size: 2em;
+    line-height: 2em;
   }
 
   .inlineclass, .otherclass {
     flex-direction: column; /* Change flex direction for better layout on mobile */
+  }
+  h4 {
+    font-size: 1.2em; /* Increase font size for better readability */
+  }
+  p{
+    font-size: 2em;
   }
 }
