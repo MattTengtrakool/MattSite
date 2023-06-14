@@ -263,3 +263,63 @@ img {
   font-size: 0.8em;
   color: #666;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 20px; /* Increase base font size for better mobile readability */
+  }
+  header{
+    font-size: 1.5em;
+  }
+  #main .part .section img, #main .part .section video {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cursor, .cursor-f {
+    width: var(--size);
+    height: var(--size);
+    position: absolute;
+    z-index: 999;
+    pointer-events: none;
+  }
+
+  .buttons {
+    position: fixed; /* Keep buttons in viewport */
+    bottom: 20px;
+    right: 20px;
+    transform: none;
+  }
+
+  .buttons button {
+    height: 45px; /* Increase button size for better touch target */
+    margin: 10px 0;
+  }
+
+  h1, h2, h3 {
+    font-size: 1em; /* Adjust header sizes */
+  }
+
+  .content {
+    width: 95%; /* Increase width for better use of space */
+    font-size: 1em; /* Increase font size for better readability */
+  }
+
+  .heading-box {
+    padding: 10px;
+    left: 5%;
+    right: 5%;
+  }
+
+  .image-container {
+    width: 50px; /* Increase image size for better visibility */
+    height: 50px;
+  }
+
+  h4, h6 {
+    font-size: 1em; /* Increase font size for better readability */
+  }
+
+  .inlineclass, .otherclass {
+    flex-direction: column; /* Change flex direction for better layout on mobile */
+  }
+}

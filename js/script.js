@@ -196,5 +196,5 @@ window.addEventListener('wheel', wheel, false);
 
 setInterval(function(){
     go(1);
-  }, 10000);
+  }, 20000);
   
