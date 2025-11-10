@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The forward vehicle of time</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vdl4wnb.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="/css/styleswriting.css">
+  </head>
+
+<body>
+  <header>
+    <!--<h1>Matt Tengtrakool</h1>-->
+    <div class="nav-container">
+      <nav class="navbar">
+        <a href="/index.html" class="nav-item">Home</a>
+        <!-- <a href="projects.html" class="nav-item">Projects</a> -->
+        <a href="/pages/writing.html" class="nav-item select">Articles</a>
+        <a href="mailto:matt_tengtrakool@college.harvard.edu" class="nav-item">Contact</a>
+      </nav>
+      <div class="mode-switch">🌙</div>
+    </div>
+  </header>
+  
+  <div class="wrapper">
+    <h5>The forward vehicle of time</h5>
+    <time datetime="2020-02-19">February 19, 2020</time>
+
+    <section class="poem">
+      <h6>On evolution</h6>
+      <p>
+        Life likes linear,<br>
+        Yet, your eyes have curved,<br>
+        your hair misplaced. What have you become?<br>
+        Your sole imprinted with the marks of time,<br>
+        changes with the shades of soul. Why would you do this to me?<br>
+        Stay, I told you, Wait,<br>
+        but you never did<br>
+        want to be predictable,<br>
+        I told you,<br>
+        Never change.
+      </p>
+
+      <h6>Nostalgia</h6>
+      <p>
+        The autumn leaves,<br>
+        fall faster,<br>
+        by year,<br>
+        and I can’t keep up.<br>
+        The sky illuminated,<br>
+        by far fewer stars,<br>
+        then were seen<br>
+        before.<br>
+        I now denounce the giant lollipop,<br>
+        “Oh! What a waste you are.”<br>
+        it lays un-appetizingly,<br>
+        unconquerable.<br>
+        Happiness becomes foreign,<br>
+        evasive to the palm,<br>
+        grab it tightly,<br>
+        it’s slimy. Who knew how quick a candle<br>
+        turns into molten wax,<br>
+        it molds regret,<br>
+        Caution, hot.<br>
+        And in all, this moment they say is fleeting,<br>
+        and I feel its undertow softly,<br>
+        pull all that’s left of me<br>
+        deep, deep out to sea.
+      </p>
+
+      <h6>Still photo</h6>
+      <p>
+        Our eyes trace the constellations, in fear<br>
+        of finding the boundaries of our love.<br>
+        The grass we lay in is wet, with the tears<br>
+        shed lamenting years without one another.<br>
+        Let us stay here, at this ledge<br>
+        where the deep sky meets the long grass.<br>
+        At the border of our deepest regrets, and<br>
+        our pungent sense of presence. Now. Here.<br>
+        Where we, for once,<br>
+        hold time at our will.
+      </p>
+
+      <h6>Perpetual Motion Machine</h6>
+      <p>
+        I was always scared of churches,<br>
+        they embody death.<br>
+        My father would console me,<br>
+        “Nothing lasts forever.”<br>
+        This I contest!<br>
+        For how does conservation of matter,<br>
+        relate to that of one’s soul? and<br>
+        if nothing lasts forever,<br>
+        where may I find home? for if<br>
+        I am temporary in the<br>
+        test of time, what’s the<br>
+        point of storing all that<br>
+        haunts my mind, and my<br>
+        hands feel light when I<br>
+        imagine they’re gone, for<br>
+        I am here and here is now, then<br>
+        where am I when here is past, and<br>
+        what's the point of praying for<br>
+        time to be kind, when it<br>
+        never stops, is always primed.<br>
+        There's no real beauty in the<br>
+        world we see, except the<br>
+        impermanence of time, that<br>
+        never ceases to be, for<br>
+        life is our one great endeavor,<br>
+        this is my desperate attempt<br>
+        to live forever.
+      </p>
+    </section>
+  </div>
+      
+  <footer>
+    <div class="wrapper">
+      <p>
+        <a href="https://twitter.com/MattTtkool" target="_blank">twitter</a> // 
+        <a href="https://github.com/MattTengtrakool" target="_blank">github</a> // 
+        <a href="https://www.linkedin.com/in/matt-tengtrakool/" target="_blank">linkedin</a> // 
+        <a href="https://medium.com/@matt.tengtrakool" target="_blank">medium</a>
+      </p>
+      <p> © 2025 Matt Tengtrakool </p>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function() {
+      $('.mode-switch').on('click', function() {
+        if ($('body').hasClass('dark-mode')) {
+          $('body').removeClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-light)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-light)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-light)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-light)');
+        } else {
+          $('body').addClass('dark-mode');
+          document.documentElement.style.setProperty('--color-primary', 'var(--color-primary-dark)');
+          document.documentElement.style.setProperty('--color-secondary', 'var(--color-secondary-dark)');
+          document.documentElement.style.setProperty('--color-gray', 'var(--color-gray-dark)');
+          document.documentElement.style.setProperty('--color-blue', 'var(--color-blue-dark)');
+        }
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $('time').each(function() {
+        var date = new Date($(this).attr('datetime'));
+        var options = { year: 'numeric', month: 'long', day: 'numeric' };
+        $(this).text(date.toLocaleDateString('en-US', options));
+      });
+    });
+  </script>
+</body>
+</html>
+
