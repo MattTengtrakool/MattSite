@@ -1,6 +1,6 @@
 // sorry for the spaghetti code and redundant variables, i wasn't exactly a good coder back then
 
-const cols = 3;
+const cols = 1;
 const main = document.getElementById('main');
 let parts = [];
 
@@ -39,8 +39,8 @@ for (let col = 0; col < cols; col++) {
 }
 
 let animOptions = {
-  duration: 2.3,
-  ease: Power4.easeInOut
+  duration: 1.2,
+  ease: "power2.inOut"
 };
 
 function go(dir) {
@@ -50,21 +50,32 @@ function go(dir) {
     else if (current + dir >= images.length) current = 0;
     else current += dir;
     setH4Background();
-    function up(part, next) {
-      part.appendChild(next);
-      gsap.to(part, {...animOptions, y: -window.innerHeight}).then(function () {
-        part.children[0].remove();
-        gsap.to(part, {duration: 0, y: 0});
-      })
-    }
-
-    function down(part, next) {
-      part.prepend(next);
-      gsap.to(part, {duration: 0, y: -window.innerHeight});
-      gsap.to(part, {...animOptions, y: 0}).then(function () {
+    function crossfade(part, next) {
+      // Set new image to be invisible initially and position it behind
+      gsap.set(next, {opacity: 0, zIndex: 0});
+      gsap.set(part.children[0], {zIndex: 1});
+      
+      // Insert new image before the current one (behind it)
+      part.insertBefore(next, part.children[0]);
+      
+      // Create timeline for synchronized crossfade
+      let tl = gsap.timeline();
+      
+      // Fade out old image and fade in new image simultaneously
+      tl.to(part.children[1], {
+        opacity: 0,
+        duration: animOptions.duration,
+        ease: animOptions.ease
+      }, 0)
+      .to(next, {
+        opacity: 1,
+        duration: animOptions.duration,
+        ease: animOptions.ease
+      }, 0)
+      .call(function() {
         part.children[1].remove();
         playing = false;
-      })
+      });
     }
 
     for (let p in parts) {
@@ -76,16 +87,11 @@ function go(dir) {
         next.appendChild(img);
       
         let h6Spans = document.querySelectorAll('h6 span');
-  h6Spans.forEach(span => {
-    span.style.backgroundImage = `url(${images[current]})`;
-  });
+        h6Spans.forEach(span => {
+          span.style.backgroundImage = `url(${images[current]})`;
+        });
 
-      
-        if ((p - Math.max(0, dir)) % 2) {
-          down(part, next);
-        } else {
-          up(part, next);
-        }
+        crossfade(part, next);
       }
       
   }
@@ -196,5 +202,5 @@ window.addEventListener('wheel', wheel, false);
 
 setInterval(function(){
     go(1);
-  }, 20000);
+  }, 25000);
   
