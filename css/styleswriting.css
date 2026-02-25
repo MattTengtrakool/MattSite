@@ -155,24 +155,18 @@ header {
 /* Dark mode styles */
 
 .mode-switch {
-border: 1px solid var(--color-gray);
-
- 
-  background:var(--color-secondary);
-    line-height: 1.3; /* Adjusts the vertical space around the text */
-
-  color: var(--color-secondary);
-  padding:0px 3px; /* Vertical padding is 10px, horizontal padding is 20px */
-  transition: var(--transition-default); /* Smooth transition */
-  border-radius: 3px; /* Creates a rounded square border */
-
-
+    border: 1px solid var(--color-gray);
+    background: var(--color-secondary);
+    line-height: 1;
+    font-size: 16px;
+    padding: 4px 8px;
+    transition: var(--transition-default);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .mode-switch:hover {
-    border:var(--color-primary-light);
-    background: var(--color-secondary);
-    color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 .filter-type {
