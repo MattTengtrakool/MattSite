@@ -264,78 +264,39 @@ img {
   color: #666;
 }
 @media only screen and (max-width: 1200px) {
-  body {
-    font-size: 20px; /* Increase base font size for better mobile readability */
-  }
-  header{
-    font-size: 2.5em;
-  }
-  #main .part .section img, #main .part .section video {
-    width: 100%;
-    height: 100%;
+  :root {
+    --spacing-medium: 5%;
   }
 
-  .cursor, .cursor-f {
-    width: var(--size);
-    height: var(--size);
-    position: absolute;
-    z-index: 999;
-    pointer-events: none;
+  header {
+    font-size: 18px;
+    padding: 0 5%;
   }
 
-  .buttons {
-    position: fixed; /* Keep buttons in viewport */
-    bottom: 20px;
-    right: 20px;
-    transform: none;
+  nav.navbar .nav-item {
+    margin-right: 15px;
   }
 
-  .buttons button {
-    height: 45px; /* Increase button size for better touch target */
-    margin: 10px 0;
+  h3 {
+    font-size: 16px;
+    line-height: 1.5;
   }
 
-  h1, h2, h3 {
-    font-size: 1em; /* Adjust header sizes */
+  h4 {
+    font-size: 16px;
   }
 
-  .content {
-    width: 95%; /* Increase width for better use of space */
-    font-size: 1em; /* Increase font size for better readability */
+  h5 {
+    font-size: 18px;
   }
 
-  .heading-box {
-    padding: 10px;
-    left: 5%;
-    right: 5%;
-  }
-
-  .image-container {
-    width: 50px; /* Increase image size for better visibility */
-    height: 50px;
-  }
-
-  
- .filter-button {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 1.5em; /* Increase font size for better readability */
-  }
-  h3{
-    font-size: 2em;
-    line-height: 2em;
+  .filter-button {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .inlineclass, .otherclass {
-    flex-direction: column; /* Change flex direction for better layout on mobile */
-  }
-  h4 {
-    font-size: 1.2em; /* Increase font size for better readability */
-  }
-  h5{
-    font-size: 1.5em;
-  }
-  p{
-    font-size: 1.5em;
+    flex-direction: column;
   }
 }
