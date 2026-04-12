@@ -7,7 +7,7 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #222;
-    background: #fff;
+    background: #faf9f6;
     font-size: 17px;
     line-height: 1.8;
 }
@@ -16,6 +16,7 @@ a {
     color: inherit;
     text-decoration-color: #ddd;
     text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s ease;
 }
 
 a:hover {
@@ -46,6 +47,15 @@ body.home main {
     width: 160px;
 }
 
+.headshot {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.2em;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
 body.home h1 {
     font-weight: normal;
     font-size: 1em;
@@ -64,7 +74,7 @@ body.home nav {
 body.home nav a {
     text-decoration: none;
     width: fit-content;
-    color: #999;
+    color: #aaa;
 }
 
 body.home nav a:hover {
@@ -112,6 +122,7 @@ body.home nav a.active {
 .contact a {
     color: #bbb;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .contact a:hover {
@@ -247,6 +258,38 @@ img {
 
 .tags__item {
     display: none;
+}
+
+/* ---- Divider ---- */
+
+.divider {
+    width: 60px;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 3em auto;
+}
+
+/* ---- Colophon ---- */
+
+.colophon {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 6em;
+    text-align: center;
+}
+
+.colophon img {
+    max-width: 300px;
+    margin: 0 auto 0.8em;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+.colophon span {
+    display: block;
+    font-size: 0.7em;
+    font-style: italic;
+    color: #aaa;
+    letter-spacing: 0.02em;
 }
 
 /* ---- Responsive ---- */
